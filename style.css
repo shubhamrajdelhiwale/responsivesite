@@ -194,3 +194,64 @@ img {
             margin: 10px auto;
         }
     }
+
+
+   /* container 2 with 5 images now  */
+.container2 {
+    height: 63vh;
+    width:100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.line1 img {
+    height: 30vh;
+    width: 47vw;
+    padding-top: 3vh;
+}
+
+.line1 {
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line2 img {
+    padding-top: 3vh;
+    height: 30vh;
+    width: 30.7vw;
+}
+
+.line2 {
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:800px){
+    .container2{
+        
+        height: 38vh;
+    }
+    .line1 img{
+        height:19vh;
+        width:46vw;
+    }
+    .line2 img{
+        height:15vh;
+        width:29.5vw;
+    }
+ }
+ @media (max-width:300px){
+    .container2{
+        
+        height: 15vh;
+    }
+    .line1 img{
+        height:6vh;
+        width:46vw;
+    }
+    .line2 img{
+        height:6vh;
+        width:29.5vw;
+    }
+ }
