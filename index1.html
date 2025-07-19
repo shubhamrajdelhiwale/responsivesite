@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Container with Responsive Circles</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      height: 300px; /* Fixed height */
+      margin: 50px auto;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .item {
+      text-align: center;
+      flex: 1 1 0;
+    }
+
+    .item img {
+      width: 10vw;
+      max-width: 100px;
+      min-width: 50px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #aaa;
+      transition: all 0.3s ease;
+    }
+
+    .item p {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .item img {
+        width: 12vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+      <p>User 1</p>
+    </div>
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
+      <p>User 2</p>
+    </div>
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 3">
+      <p>User 3</p>
+    </div>
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="User 4">
+      <p>User 4</p>
+    </div>
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="User 5">
+      <p>User 5</p>
+    </div>
+    <div class="item">
+      <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="User 6">
+      <p>User 6</p>
+    </div>
+  </div>
+
+</body>
+</html>
