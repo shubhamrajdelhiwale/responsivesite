@@ -121,7 +121,7 @@ img {
       min-width: 20px;
       height: auto;
       border-radius: 50%;
-      background-color: red;
+      background-color: rgb(62, 253, 209);
       transition: all 0.3s ease;
     }
     .item p {
