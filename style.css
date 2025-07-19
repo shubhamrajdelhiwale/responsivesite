@@ -1,4 +1,4 @@
-/* same in every site */
+ /* same in every site */
 * {
     margin: 0%;
     padding: 0%;
@@ -21,19 +21,24 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 0px 2vw;
     align-items: center;
 }
 
 .top a {
     color: rgb(249, 248, 248);
 }
+@media (max-width : 410px){
+    .top {
+        display:none;
+    }
+}
 
 /* navigation bar  */
 .navbar {
     height: 9vh;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 2vw;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -59,680 +64,194 @@ body {
     /* Removes space after the last icon */
 }
 
+@media (max-width:250px){
+    .logo{
+        display:none;
+    }
+}
+
 /* the look image in container  */
 img {
-    height: 450px;
-    width: 100%;
+    height: 30vh;
+    width: 100vw;
 }
 
+@media (max-width : 300px){
+    img{
+        height:20vh;
+        width:100vw;
+    }
+}
+
+@media (max-width : 900px){
+    img{
+        height:30vh;
+        width:100vw;
+    }
+}
+@media (min-width : 901px){
+    img{
+        height:40vh;
+        width:100vw;
+    }
+}
 /* circular cards for photo and name of cloths */
-.container1 {
-    height: 180px;
-    width: 100%;
-    display: flex;
-    background-color: #fdfbfb;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container1 h2 {
-    font-weight: 600;
-    font-size: 1.3em;
-}
-
-/* circle images */
-
-.circle1 img {
-    height: 170px;
-    width: 130px;
-    object-fit: cover;
-    padding-left: 23px;
-    padding-top: 1px;
-}
-
-.circle2 img {
-    height: 160px;
-    width: 130px;
-    object-fit: cover;
-    padding-left: 6px;
-    padding-top: 2px;
-}
-
-.circle3 img {
-    height: 160px;
-    width: 130px;
-    object-fit: cover;
-    padding-left: 23px;
-    padding-top: 1px;
-}
-
-.circle4 img {
-    height: 190px;
-    width: 130px;
-    object-fit: cover;
-    padding-left: 23px;
-    padding-top: 3px;
-}
-
-.circle5 img {
-    height: 160px;
-    width: 130px;
-    object-fit: cover;
-    padding-left: 20px;
-    padding-top: 1px;
-}
-
-.circle6 img {
-    height: 170px;
-    width: 120px;
-    object-fit: cover;
-    padding-left: 10px;
-    padding-top: 2px;
-}
-
-/* circle shapes css */
-
-.circle1 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #F1DBE9;
-
-}
-
-.circle2 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #d180b3;
-}
-
-.circle3 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #76b7ce;
-}
-
-.circle4 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #c2ce76;
-}
-
-.circle5 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #ce768c;
-}
-
-.circle6 {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #90ce76;
-}
-
-.card1 {
-    padding-left: 80px;
-}
-
-.card6 {
-    padding-right: 40px;
-}
 
 
-/* container 2 with 5 images now  */
+    .container {
+      width: 100vw;
+      height: auto; /* Fixed height */
+      margin: 50px auto;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .item {
+      text-align: center;
+      flex: 1 1 0;
+    }
+
+    .item img {
+      aspect-ratio: 1/1;
+      width: 10vw;
+      max-width: 250px;
+      min-width: 20px;
+      height: auto;
+      border-radius: 50%;
+      background-color: rgb(62, 253, 209);
+      transition: all 0.3s ease;
+    }
+    .item p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    @media (min-width:1400px){
+        .item p{
+            font-size:2em;
+        }
+        .container{
+            height: 30vh; 
+            margin: 10px auto;
+        }
+    }
+
+    @media (max-width:1400px){
+        .item p{
+            font-size:1em;
+        }
+        .container{
+            height: 22vh; 
+            margin: 10px auto;
+        }
+    }
+    @media (max-width:1100px){
+        .item p{
+            font-size:1.2em;
+        }
+        .container{
+            height: 19vh; 
+            margin: 10px auto;
+        }
+    }
+    @media (max-width:880px){
+        .item p{
+            font-size:0.9em;
+        }
+        .container{
+            height: 15vh; 
+            margin: 10px auto;
+        }
+    }
+    @media (max-width:650px){
+        .item p{
+            font-size:0.7em;
+        }
+        .container{
+            height: 9vh; 
+            margin: 14px auto;
+        }
+    }
+    @media (max-width:505px){
+        .item p{
+            font-size:0.5em;
+        }
+        .container{
+            height: 10vh; 
+            margin: 10px auto;
+        }
+    }
+    @media (max-width:365px){
+        .item p{
+            display:none;
+        }
+        .container{
+            height: 5vh; 
+            margin: 10px auto;
+        }
+    }
+
+
+    /* container 2 with 5 images now  */
 .container2 {
-    height: 67vh;
-    background-color: rgb(249, 247, 247);
+    height: 63vh;
+    width:100vw;
+    background-color: rgb(255, 255, 255);
 }
 
 .line1 img {
-    height: 290px;
-    width: 670px;
-    padding-top: 23px;
+    height: 30vh;
+    width: 47vw;
+    padding-top: 3vh;
 }
 
 .line1 {
-    padding: 0px 80px;
+    padding: 0px 2vw;
     display: flex;
     justify-content: space-between;
 }
 
 .line2 img {
-    padding-top: 23px;
-    height: 190px;
-    width: 437px;
+    padding-top: 3vh;
+    height: 30vh;
+    width: 30.7vw;
 }
 
 .line2 {
-    padding: 0px 80px;
+    padding: 0px 2vw;
     display: flex;
     justify-content: space-between;
 }
 
-/* <!-- page 2 starts here  -->
-          <!-- trending t shirts headings and 4 div image container with sizes and prices -->
-         */
-.line-heading {
-    text-align: center;
-    width: 89.5%;
-    position: relative;
-    margin-left: 80px;
-    margin-right: 80px;
-    background-color: #faf9f9;
-}
-
-.line-heading::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: rgb(242, 138, 138);
-    z-index: 0;
-}
-
-.line-heading span {
-    background: white;
-    /* Match your page background */
-    padding: 0 15px;
-    position: relative;
-    z-index: 1;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-
-/* bootom line bar fixed and end position  */
-.bottombar {
-    height: 4vh;
-    background-color: black;
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-}
-
-
-/* footer boroad all with 4 divs logos and information  */
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-footer {
-    height: 210px;
-    width: 100%;
-    background-color: rgb(250, 247, 247);
-    position: relative;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    padding: 10px 80px;
-    justify-content: space-between;
-}
-
-.box1 p {
-    text-align: center;
-    font-size: 1.3rem;
-    text-align: center;
-    justify-content: center;
-}
-
-.box1 {
-    height: 180px;
-    width: 500px;
-    background-color: #fff;
-    padding: 7px;
-    color: #322c2c;
-}
-
-.box1 p {
-    text-align: left;
-}
-
-.box2 {
-    height: 180px;
-    width: 300px;
-    background-color: #fff;
-    padding: 7px;
-    color: #322c2c
-}
-
-.box3 {
-    height: 180px;
-    width: 300px;
-    background-color: #fff;
-    padding: 7px;
-    color: #322c2c
-}
-
-.box4 {
-    height: 180px;
-    width: 300px;
-    background-color: #fff;
-    padding: 7px;
-    color: #322c2c
-}
-
-h2 {
-    color: rgb(113, 25, 15);
-}
-
-li {
-    width: 100%;
-}
-
-.box4 p {
-    text-align: start;
-    margin: 7px 0px;
-}
-
-li {
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 2px;
-}
-
-
-/* trending section 4 cards with t shirt images 4 divs with sizes  */
-
-
-.trendingtshirts {
-    display: flex;
-    margin: 35px 80px;
-    justify-content: space-between;
-}
-
-.fox1 {
-    height: 486px;
-    width: 320px;
-}
-
-.fox1 img {
-    height: 370px;
-    width: 320px;
-}
-
-.fox1 input {
-    border: #E6E6E6 solid; 
-    font-size: 1.8rem;
-    padding: 6px;
-    background-color: white;
-}
-
-.sizes {
-    display: flex;
-    justify-content: space-between;
-    margin: 2px 10px;
-}
-
-.price {
-    display: flex;
-    justify-content: center;
-}
-
-.price h2 {
-    margin-right: 4px;
-    font-size: 1.5em;
-    color: black;
-}
-
-.price h3 {
-    margin-left: 4px;
-    margin-top: 3px;
-    font-size: 1.2em;
-    text-decoration: line-through;
-    color: red;
-}
-
-.fox1 p {
-    font-size: 1.2em;
-    justify-content: center;
-    text-align: center;
-}
-
-/* view all button in center  */
-.viewall {
-    display: flex;
-    justify-content: center;
-    position: center;
-    height: 50px;
-}
-
-.viewall input {
-    font-size: 1.4rem;
-    padding: 2px 45px;
-    font-weight: 400;
-    background: rgb(102, 8, 8);
-    color: white;
-    border: none;
-}
-
-/* featured products title in center with background center line  */
-
-#featured {
-    margin-top: 65px;
-    margin-bottom: 35px;
-    font-size: 1.3em;
-    color: #201d1d;
-}
-
-/* featured products 4 images card already prepared  */
-/* already completed just copy pasted */
-
-
-/* <!-- view all button second in center  --> */
-#view2 {
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-
-/* 3 images with clothes and text in blur above it */
-
-.container3 {
-    height: 490px;
-    width: 100%;
-    margin-top: 60px;
-    background-color: rgb(254, 255, 254);
-    display:flex;
-    justify-content: space-between;
-    padding: 2px 80px;
-    margin-bottom: 90px;
-}
-
-.group1 {
-    height: 500px;
-    width: 440px;
-    background-color: rgb(86, 154, 183);
-    position:relative;
-}
-
-.group1 img {
-    height: 490px;
-    width: 320px;
-    margin-left:60px;
-}
-
-.overlap {
-    position: absolute;
-    bottom:0;
-    left:0;
-    background-color: none;
-    color:white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:70px;
-    width:440px;
-    background: rgba(246, 244, 244,);
-    font-size: 1.7rem;
-    backdrop-filter: blur(30px);  /* blur effect */
-} 
-#img11{
-    background-color: #9be5f4;
-}
-#img12{
-    background-color: #c42c2c;
-}
-
-/* third container with dif image covering most page same things  */
-/* copy paste style already given same class and div  */
-
-/* 2 offer page or sales page big 2 divs container 4 */
-.container4 {
-  display: flex;/* Allows wrapping to the next line if needed */
-  gap: 5px;        /* Optional: space between cards */
-  
-    padding:10px 80px;
-    justify-content: space-between;
-}
-.dox1{
-    height:600px;
-    width:650px;
-    background-color:#CCCEA7;
-    display: flex;
-    display: ;
-    flex-direction: column;
-    align-items: center;
-    margin:10px 20px;
-    padding-top:80px;
-    flex-shrink: 0; /* Prevent shrinking */
-    padding:10px 80px;
-
-}
-.dox1 img{
-    height:172px;
-    width:172px;
-}
-.dox1 h3{
-    width:220px;
-    font-size: 2.5rem;
-    margin:25px;
-    text-align: center;
-}
-.dox1 h4{
-    width:400px;
-    text-align: center;
-    font-size: 5rem;
-    margin:2px;
-}
-
-#butn{
-    height:50px;
-    font-size: 1.3rem;
-    border: solid rgb(255, 254, 254) 2px;
-    padding:12px 70px;
-    margin-top:30px;
-    color:white;
-}
-
-.dox2{
-    height:600px;
-    width:650px;
-    background-color:#D6BEBE;
-    display: flex;
-    display: ;
-    flex-direction: column;
-    align-items: center;
-    margin:10px 20px;
-    padding-top:80px;
-    flex-shrink: 0; /* Prevent shrinking */
-    padding:10px 80px;
-
-}
-.dox2 img{
-    height:172px;
-    width:172px;
-    margin-top:20px;
-}
-.dox2 h3{
-    width:220px;
-    font-size: 2.5rem;
-    margin:25px;
-    text-align: center;
-}
-.dox2 h4{
-    width:400px;
-    text-align: center;
-    font-size: 5rem;
-    margin:2px;
-}
-
-
-/* 7days return and 0ther 3 images with 2 semi cicrcle side by side */
-
- .container5 {
-            height:290px;
-            width:100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 90px 250px;
-            text-align: center;
-            font-size: 1.2em;
-            background-color: #F5F4F2;
-            overflow: visible;
-            position: relative;
-            /* Hide overflowing parts of the circles */
-        }
-
-        .container5 p {
-            font-size: 1.3em;
-            color: #1c1c1c;
-            fornt-weight: solid;
-        }
-
-        .container5 img {
-            height: 150px;
-            width: 150px;
-        }
+@media (max-width:800px){
+    .container2{
         
-        #c1 {
-            left: -150px;
-            bottom:0;
-            transform: none;
-            /* Half of width to make it stick out */
-        }
-
-        #c2 {
-            right: -150px;
-            top:0;
-            transform: translateY(-50%);
-        }
-
-        .cical1 {
-            position: absolute;
-            width: 270px;
-            /* Adjust size */
-            height: 270px;
-            background-color: #770015;
-            /* Maroon color */
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
-        }
-
-
-        /* subscribe to get updates page */
-
-         .container6 {
-            background-color: rgb(255, 255, 255);
-            height: 400px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .moxx {
-            background: linear-gradient(97.3deg, #AB001E -6.23%, #770015 105.09%);
-;
-            height: 350px;
-            width: 100%;
-            margin: 20px 80px;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            
-            position: relative;
-            overflow: hidden;
-        }
-
-        .moxx p {
-            text-align: center;
-            font-size: 4rem;
-            color: white;
-            font-weight: solid;
-        }
-
-        .subscribe {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height:73px;
-            width:100%;
-            margin:20px 0px;
-        }
-        .subscribe input{
-            height:90px;
-            width:680px;
-            border:none;
-            background:rgba(243, 243, 243, 0.3);
-            font-size: 1.6em;
-            padding:45px;
-            color:white;
-        }
-        .subscribe button{
-            height:90px;
-            width:250px;
-            border: none;
-            color:#770015;
-            font-size:2.5rem;
-        }
-        .submit value{
-
-        }
-        .cycle1{
-            height: 490px;
-            width: 380px;
-            position: absolute;
-            background-color: rgba(250, 250, 250, 0.2);
-            border-radius: 50%;
-            top:-50px;
-            transform: translateY(50%);
-            left:-275px;
-            transform: rotate(-40deg);
-        }
-        .cycle2{
-            height: 350px;
-            width: 780px;
-            position: absolute;
-            background-color: rgb(255, 255, 255,0.2);
-            border-radius: 50%;
-            top:0;
-            transform: translateY(50%);
-            right:-630px;
-            transform: rotate(0deg);
-        }
-
-        /* fake dummy to give some space  */
-        .gox{
-            background-color: rgb(255, 255, 255);
-            height:110px;
-            width:100%;
-        }
-
-
-/* now we will work on responsiveness */
-
-@media (max-width : 500px){
-    .top{
-        height:4vh;
-        width:100vw;
-
+        height: 38vh;
     }
-    body{
-        height:100vh;
-        width:100vw;
+    .line1 img{
+        height:19vh;
+        width:46vw;
     }
-}
-
-
-
-
+    .line2 img{
+        height:15vh;
+        width:29.5vw;
+    }
+ }
+ @media (max-width:300px){
+    .container2{
+        
+        height: 15vh;
+    }
+    .line1 img{
+        height:6vh;
+        width:46vw;
+    }
+    .line2 img{
+        height:6vh;
+        width:29.5vw;
+    }
+ }
